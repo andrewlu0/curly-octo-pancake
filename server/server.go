@@ -27,7 +27,7 @@ import (
 	"net"
 
 	"google.golang.org/grpc"
-	pb "google.golang.org/grpc/examples/helloworld/helloworld"
+	pb "github.com/andrewlu0/curly-octo-pancake/curto/curto"
 )
 
 var (

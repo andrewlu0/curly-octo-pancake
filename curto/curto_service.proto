@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option go_package = "github.com/andrewlu0/curly-octo-pancake/curto/curto";
+
+package curto;
+
+// Orchestration.
+service Greeter {
+  rpc ExecuteGraph (GraphExecutionRequest) returns (GraphExecutionReply) {}
+}
+
+// GraphExecutionRequest.
+message GraphExecutionRequest {
+  string name = 1;
+}
+
+// GraphExecutionReply.
+message GraphExecutionReply {
+  string message = 1;
+}
